@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.king {
+    width: 100%;
+    display: flex;
+}
+
+.logoDiv, .formDiv {
+    width: 50%;
+    height: inherit;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+    top: 31%;
+    width: 70%;
+    height: 21%;
+    margin: 15px auto;
+}
+
+.logo p {
+    font-family: 'Alkatra', cursive;
+    font-size: 22px;
+    color: rgb(41, 41, 41);
+}
+
+.logo span {
+    color: rgb(33, 123, 68);
+    font-family: 'Alkatra', cursive;
+}
+
+.formDiv {
+    width: 50%;
+    position: relative;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formDiv video {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bord{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    border-radius: 8px;
+    background-color: rgba(202, 243, 223, 0.783);
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::placeholder {
+    color: rgb(47, 47, 47);
+}
+
+.form input {
+    width: 140%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(33, 123, 68);
+    background-color: transparent;
+    border-radius: 20px;
+    font-family: Oswald;
+    font-weight: 620;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: outline 50ms;
+}
+
+.form input:focus {
+    outline: 2px solid rgb(33, 123, 68);
+}
+
+.form button {
+    width: 150%;
+    padding: 9px 16px;
+    background-color: rgb(33, 123, 68);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: outline 50ms;
+    transition: background-color 100ms;
+}
+
+.form button:hover {
+
+    outline: 2px solid rgb(33, 123, 68);
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+.c{
+    position: relative;
+}
+
+.linkSignup {
+    margin: 8px;
+}
+
+.linkSignup a {
+    color: rgb(33, 123, 68);
+    text-decoration: none;
+    transition: text-decoration 500ms;
+    font-family: system-ui;
+}
+
+.linkSignup a:hover {
+    text-decoration: underline;
+}
+.errorMessage{
+    font-size: 15.5px;
+    font-style: italic;
+    text-shadow: 0.1px 0.1px 0.3px black;
+    text-align: center;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 0, 0, 0.047);
+    margin-bottom: 22px;
+}
+.successMessage{
+    font-size: 15.5px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0.1px 0.1px 0.3px black;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 128, 0, 0.063);
+    margin-bottom: 22px;
+}
