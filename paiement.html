@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Payment</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/paiement.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Payment</h1>
+        <form>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="Enter your card number" required>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" placeholder="Enter the cardholder name" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" placeholder="MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="Enter the CVV code" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount to Pay($)</label>
+                <input type="text" id="amount" placeholder="Enter the amount" required>
+            </div>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>
