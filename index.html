@@ -18,7 +18,7 @@
   min-width: 520px; 
           }*/
   </style>
-  <!-- Google Tag Manager -->
+  <!-- Google Tag Manager
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
@@ -26,7 +26,7 @@
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MM8Z4V6');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-MM8Z4V6');</script> -->
   <!-- End Google Tag Manager -->
 
   <meta name="title" content="INSEA Charity ( club social insea )">
@@ -157,10 +157,10 @@
               <li> <a href="testemonials.html">NOTRE EQUIPE</a></li>
               <li><a href="gallery.html">GALLERY</a></li>
               <li><a href="contact.html">CONTACT</a></li>
-              <li><a href="blog.html">MON COMPTE</a>
+              <li><a>MON COMPTE</a>
                 <ul class="submenu">
-                  <li class="submenu-item"><a href="causes.html">S'INSCRIRE</a></li>
-                  <li class="submenu-item"><a href="causes-single.html">SE CONNECTER</a></li>
+                  <li class="submenu-item"><a href="#" id="signup" data-target="#signupModal" data-toggle="modal">S'INSCRIRE</a></li>
+                  <li class="submenu-item"><a href="#" id="login" data-target="#loginModal" data-toggle="modal">SE CONNECTER</a></li>
                 </ul>
               </li>
 
@@ -176,7 +176,124 @@
 
   </header> <!-- /. main-header -->
 
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+  aria-hidden="true">
 
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="signupModalLabel">SIGN UP</h4>
+      </div>
+      <div class="modal-body">
+
+        <form class="form-signup">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+
+         
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</div> <!-- /.modal -->
+
+
+
+<!-- Login Modal -->
+<!-- Login Modal -->
+<!-- <div id="loginModal" class="modal-overlay"style="display: none;">
+  <div class="modal-content">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+    <button class="close-button" id="loginCloseButton">&times;</button>
+  </div>
+</div> -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+  aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">LOGIN</h4>
+      </div>
+      <div class="modal-body">
+
+        <form class="form-login">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</div> <!-- /.modal -->
+
+<!-- <script>
+  // Get the elements
+  var signupLink = document.getElementById('signup');
+  var loginLink = document.getElementById('login');
+  var signupModal = document.getElementById('signupModal');
+  var loginModal = document.getElementById('loginModal');
+
+  // Add click event listeners
+  signupLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    signupModal.style.display = 'block'; // Show the sign-up modal
+  });
+
+  loginLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    loginModal.style.display = 'block'; // Show the login modal
+  });
+</script> -->
 
 
   <!-- Carousel
