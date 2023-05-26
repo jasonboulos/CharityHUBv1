@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js">
 
+
+
 <head>
   <style>
     body {
@@ -154,13 +156,14 @@
                       </ul> -->
 
               </li>
-              <li> <a href="testemonials.html">NOTRE EQUIPE</a></li>
               <li><a href="gallery.html">GALLERY</a></li>
               <li><a href="contact.html">CONTACT</a></li>
               <li><a>MON COMPTE</a>
                 <ul class="submenu">
-                  <li class="submenu-item"><a href="#" id="signup" data-target="#signupModal" data-toggle="modal">S'INSCRIRE</a></li>
-                  <li class="submenu-item"><a href="#" id="login" data-target="#loginModal" data-toggle="modal">SE CONNECTER</a></li>
+                  <li class="submenu-item"><a href="#" id="signup" data-target="#signupModal"
+                      data-toggle="modal">S'INSCRIRE</a></li>
+                  <li class="submenu-item"><a href="#" id="login" data-target="#loginModal" data-toggle="modal">SE
+                      CONNECTER</a></li>
                 </ul>
               </li>
 
@@ -176,107 +179,86 @@
 
   </header> <!-- /. main-header -->
 
-<!-- Sign Up Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
-  aria-hidden="true">
 
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-            aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="signupModalLabel">SIGN UP</h4>
-      </div>
-      <div class="modal-body">
 
-        <form class="form-signup">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-          </div>
-          
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
 
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter your password">
-          </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="signupModalLabel">SIGN UP</h4>
+        </div>
+        <div class="modal-body">
 
-         
+          <form class="form-signup">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
 
-          <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-          </div>
 
-          <button type="submit" class="btn btn-primary">Sign Up</button>
-        </form>
-
-      </div>
-    </div>
-  </div>
-
-</div> <!-- /.modal -->
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="password1" placeholder="Enter your password">
+            </div>
 
 
 
-<!-- Login Modal -->
-<!-- Login Modal -->
-<!-- <div id="loginModal" class="modal-overlay"style="display: none;">
-  <div class="modal-content">
-    <h2>Login</h2>
-    <form>
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="form-group">
-        <button type="submit">Login</button>
-      </div>
-    </form>
-    <button class="close-button" id="loginCloseButton">&times;</button>
-  </div>
-</div> -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-  aria-hidden="true">
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
 
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-            aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="loginModalLabel">LOGIN</h4>
-      </div>
-      <div class="modal-body">
+            <button type="submit" class="btn btn-primary" onclick="CheckSigninForm()">Sign Up</button>
+          </form>
 
-        <form class="form-login">
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-          </div>
-
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter your password">
-          </div>
-
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-
+        </div>
       </div>
     </div>
-  </div>
 
-</div> <!-- /.modal -->
+  </div> <!-- /.modal -->
 
-<!-- <script>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="loginModalLabel">LOGIN</h4>
+        </div>
+        <div class="modal-body">
+
+          <form class="form-login">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="password2" placeholder="Enter your password">
+            </div>
+
+            <button type="submit" class="btn btn-primary" onclick="CheckLoginForm()">Login</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /.modal -->
+
+  <!-- <script>
   // Get the elements
   var signupLink = document.getElementById('signup');
   var loginLink = document.getElementById('login');
@@ -601,18 +583,16 @@
               <div class="footer-content">
 
                 <p>
-                  <strong>Le Club INSEA Charity </strong>abrégé en CIC se donne pour missions de protéger,
-                  réparer, motiver, éduquer, soigner et aider à se construire des personnes en difficulté. Les valeurs
-                  et
-                  les principes d'action du club trouvent leur concrétisation dans le projet associatif et les principes
-                  et les principes d'accompagnement des publics fragiles. Le club défend des valeurs humanistes
-                  universelles
-                  en menant des actions non marchandes, dans le cadre d'une gestion désintéressée.
+                  <strong>La plateforme CharityHub </strong>, un site web dédié à la charité, fournit des informations
+                  essentielles sur la plateforme. CharityHub vise à promouvoir les associations caritatives renommées en
+                  France, en mettant en avant leur mission, leur impact et leurs actions. Le site offre également la
+                  possibilité aux utilisateurs de faire des dons directement à travers la plateforme, en fournissant un
+                  moyen simple et sécurisé de contribuer aux causes qui leur tiennent à cœur.
+
                 </p>
 
-                <p>Dans un contexte socio-économique complexe, qui fait appel plus que jamais à la solidarité,
-                  la protection sociale et à la charité vis-à-vis des personnes en difficulté, CIC désire affirmer
-                  sa contribution à la construction d'une société plus juste, humaine et solidaire.</p>
+                <p>En unissant les associations et les donateurs, CharityHub aspire à faire une différence significative
+                  dans la société en encourageant l'esprit de générosité et de solidarité.</p>
 
               </div>
 
@@ -628,13 +608,11 @@
 
               <div class="footer-content">
                 <ul class=" list-unstyled ">
-                  <li> &nbsp; &nbsp; &nbsp; <a href="index.html"> <strong> > </strong> INSEA Charity Home page </a>
-                  </li> <br><br>
-                  <li> &nbsp; &nbsp; &nbsp; <a href="blog.html"> <strong> > </strong> INSEA Charity Blog </a> </li>
+                  <li> &nbsp; &nbsp; &nbsp; <a href="index.html"> <strong> > </strong> ACCUEIL </a> </li> <br><br>
+                  <li> &nbsp; &nbsp; &nbsp; <a href="blog.html"> <strong> > </strong> NOS ASSOCIATIONS </a> </li>
                   <br><br>
-                  <li> &nbsp; &nbsp; &nbsp; <a href="about.html"> <strong> > </strong> Qui sommes nous ?</a> </li> <br>
-                  <br>
-                  <li> &nbsp; &nbsp; &nbsp; <a href="causes.html"> <strong> > </strong> Nos actions</a> </li> <br><br>
+                  <li> &nbsp; &nbsp; &nbsp; <a href="about.html"> <strong> > </strong> NOTRE EQUIPE</a> </li> <br> <br>
+                  <li> &nbsp; &nbsp; &nbsp; <a href="causes.html"> <strong> > </strong> GALLERY</a> </li> <br><br>
                 </ul>
 
               </div>
@@ -653,14 +631,14 @@
 
                   <li class="tweet ">
                     <center>
-                      <i class="fa fa-map-marker fa-2x"> </i>Terminus tramway, INSEA,
-                      Avenue Allal Al Fassi, Rabat 10100
+                      <i class="fa fa-map-marker fa-2x"> </i>2 Rue Ernest Duvillard,
+                      Belfort-CEDEX 90000, France
                     </center>
                   </li>
 
                   <li class="tweet">
                     <center>
-                      We are active on Social media : <br>
+                      On es souvent actives sur les réseaux sociaux : <br>
                       <ul class="list-unstyled list-inline header-social text-center">
 
                         <li> <a href="https://www.facebook.com/INSEA.CHARITY"> <i class="fa fa-facebook"></i> </a> </li>
@@ -670,7 +648,7 @@
                               class="fa fa-linkedin"></i> </a> </li>
                         <li> <a href="https://youtube.com/channel/UC7g6pVlm8olEbu-NaEFHzDg"> <i
                               class="fa fa-youtube"></i> </a> </li>
-                        <li> <i class="fa fa-envelope"></i> <a href="mailto: CharityHUB@gmail.com"></a> </li>
+                        <li> <i class="fa fa-envelope"></i> <a href="mailto:inseacharity@gmail.com"></a> </li>
                       </ul>
                   </li>
                   </center>
@@ -679,8 +657,7 @@
                     <center>
                       Nous appeler ? <div class=" text-center"><br> <a href="tel:+212 660 697 761"> Téléhone : <i
                             class="fa fa-phone"> </i></a>
-                        &nbsp; Ou &nbsp; <a href="http://wa.me/212660697761"> Whatsapp : <i class="fa fa-whatsapp"></i>
-                        </a></div>
+                        &nbsp; Ou &nbsp; <a href="http://wa.me"> Whatsapp : <i class="fa fa-whatsapp"></i> </a></div>
                   </li>
                   </center>
 
@@ -760,9 +737,8 @@
     <div class="footer-bottom">
 
       <div class="container text-center ">
-        Made with <a href="https://hamidabdellaoui.netlify.app"><i class="fa fa-heart"></i></a> <strong>Insea
-          charity</strong>
-        <script> document.write(new Date().getFullYear());</script> &COPY; | All Rights Reserved
+        Made with <a href="https://hamidabdellaoui.netlify.app"><i class="fa fa-heart"></i></a>
+        <strong>charityHUB</strong> 2023 &COPY; | All Rights Reserved
       </div>
     </div>
 
@@ -803,12 +779,8 @@
 
   </div> <!-- /.modal -->
 
-
-
-
-
-  <!--  Scripts
-    ================================================== -->
+  <!--  Scripts  -->
+  <script src="assets/js/functions.js"></script>
 
   <!-- jQuery -->
   <script src="assets/js/jquery-1.11.1.min.js"></script>
